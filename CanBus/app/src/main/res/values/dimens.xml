@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="label_large_size">17.6px</dimen>
+    <dimen name="label_medium_size">12.8px</dimen>
+    <dimen name="label_small_size">9.6px</dimen>
+</resources>

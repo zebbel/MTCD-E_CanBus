@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2">
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50px"
+        android:orientation="vertical"
+        android:background="@drawable/border"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="PxUsage">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="30px"
+            android:gravity="center"
+            android:orientation="horizontal"
+            tools:ignore="PxUsage">
+
+            <TextView
+                android:id="@+id/textViewStartCondition"
+                style="@style/large_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/start_condition"
+                android:textColor="#FFFFFF" />
+
+            <Spinner
+                android:id="@+id/startConditionSpinner"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50px"
+                android:background="@drawable/abc_spinner_mtrl_am_alpha"
+                android:backgroundTint="#FFFFFF"
+                tools:ignore="PrivateResource" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:gravity="center"
+            android:orientation="horizontal"
+            tools:ignore="PxUsage">
+
+            <TextView
+                android:id="@+id/textViewStopCondition"
+                style="@style/large_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="2px"
+                android:text="@string/stop_condition"
+                android:textColor="#FFFFFF" />
+
+            <Spinner
+                android:id="@+id/stopConditionSpinner"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50px"
+                android:background="@drawable/abc_spinner_mtrl_am_alpha"
+                android:backgroundTint="#FFFFFF"
+                tools:ignore="PrivateResource" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout1"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout1"
+        tools:ignore="PxUsage">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15px"
+            android:gravity="center"
+            android:orientation="horizontal"
+            tools:ignore="PxUsage">
+
+            <TextView
+                android:id="@+id/textViewResendVolume"
+                style="@style/large_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8px"
+                android:text="@string/resendVolume"
+                android:textColor="#FFFFFF" />
+
+            <CheckBox
+                android:id="@+id/resendVolumeSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40px"
+                android:button="@drawable/checkbox" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            tools:ignore="PxUsage">
+
+            <TextView
+                android:id="@+id/textViewResendVolumeTime"
+                style="@style/large_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15px"
+                android:text="@string/resend_time"
+                android:textColor="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/editTextTimeResendVolumeTime"
+                style="@style/large_label"
+                android:layout_width="50px"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="70px"
+                android:autofillHints=""
+                android:imeOptions="actionDone"
+                android:inputType="time"
+                tools:ignore="LabelFor" />
+
+            <TextView
+                style="@style/large_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8px"
+                android:text="@string/_1_10s"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50px"
+        android:orientation="vertical"
+        android:background="@drawable/border"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout1"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout1"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout1"
+        tools:ignore="PxUsage">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="11px"
+            android:gravity="center"
+            android:orientation="horizontal"
+            tools:ignore="PxUsage">
+
+            <TextView
+                android:id="@+id/textViewRearCamera"
+                style="@style/large_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="35px"
+                android:text="@string/rear_camera"
+                android:textColor="#FFFFFF" />
+
+            <CheckBox
+                android:id="@+id/rearCameraSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50px"
+                android:button="@drawable/checkbox" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="PxUsage">
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="100px"
+            android:background="@drawable/button"
+            android:text="@string/save"
+            android:textSize="@dimen/label_large_size"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/defaultButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:text="@string/defaultString"
+            android:textSize="@dimen/label_large_size"
+            tools:ignore="ButtonStyle" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

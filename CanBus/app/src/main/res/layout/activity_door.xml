@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="bottom"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_gravity="bottom|center_vertical|center_horizontal|center"
+        android:background="@drawable/carbg_door"
+        android:layout_width="240px"
+        android:layout_height="330px"
+        android:layout_marginBottom="112px"
+        android:scaleType="fitXY"/>
+
+    <AbsoluteLayout
+        android:layout_gravity="bottom|center_vertical|center_horizontal|center"
+        android:id="@+id/door_view"
+        android:layout_width="240px"
+        android:layout_height="330px"
+        android:layout_marginBottom="112px">
+
+        <ImageView
+            android:id="@+id/doorbg"
+            android:layout_width="234px"
+            android:layout_height="300px"
+            android:src="@drawable/car_0"
+            android:scaleType="fitXY"
+            android:layout_x="1px"
+            android:layout_y="15px"/>
+
+        <ImageView
+            android:id="@+id/fleftdoor"
+            android:layout_width="67px"
+            android:layout_height="78px"
+            android:src="@drawable/lf_0"
+            android:scaleType="fitXY"
+            android:layout_x="1px"
+            android:layout_y="118px"/>
+
+        <ImageView
+            android:id="@+id/bleftdoor"
+            android:layout_width="67px"
+            android:layout_height="67px"
+            android:src="@drawable/lr_0"
+            android:scaleType="fitXY"
+            android:layout_x="1px"
+            android:layout_y="195px"/>
+
+        <ImageView
+            android:id="@+id/frightdoor"
+            android:layout_width="67px"
+            android:layout_height="78px"
+            android:src="@drawable/rf_0"
+            android:scaleType="fitXY"
+            android:layout_x="172px"
+            android:layout_y="118px"/>
+
+        <ImageView
+            android:id="@+id/brightdoor"
+            android:layout_width="67px"
+            android:layout_height="67px"
+            android:src="@drawable/rr_0"
+            android:scaleType="fitXY"
+            android:layout_x="172px"
+            android:layout_y="195px"/>
+
+    </AbsoluteLayout>
+</FrameLayout>

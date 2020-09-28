@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">CanBus</string>
+    <string name="title_activity_can_box_settings">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="start_condition">Start Condition</string>
+    <string name="stop_condition">Stop Condition</string>
+    <string name="rear_camera">rear Camera</string>
+    <string name="save">Save</string>
+    <string name="defaultString">Default</string>
+    <string name="resendVolume">resend Volume</string>
+    <string name="resend_time">resend time</string>
+    <string name="_1_10s">1/10s</string>
+    <string-array name="startCondition">
+        <item>startKey</item>
+        <item>startACC</item>
+    </string-array>
+    <string-array name="stopCondition">
+        <item>stopKey</item>
+        <item>stopACC</item>
+        <item>stopDriver</item>
+        <item>stopFront</item>
+    </string-array>
+</resources>
